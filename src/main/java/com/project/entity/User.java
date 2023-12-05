@@ -1,7 +1,5 @@
 package com.project.entity;
-
 import java.util.List;
-
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -14,14 +12,14 @@ import jakarta.validation.constraints.Email;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
 @Entity
-@Data@AllArgsConstructor
+@Data
+@AllArgsConstructor
 @NoArgsConstructor
 public class User {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-    private Integer id;
+        private Integer id;
 	private String firstName;
 	private String lastName;
 	private String username;
